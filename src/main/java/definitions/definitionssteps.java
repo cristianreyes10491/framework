@@ -1,7 +1,9 @@
 package definitions;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.en.And;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -26,13 +28,11 @@ public class definitionssteps {
 
         }
 
-        public void iAmInTheLoginPage () {
+        @And("Type my user and my pass for test {string}")
+        public void typeMyUserAndMyPassForTest(String arg0) {
         }
 
-        public void typeMyUserAndMyPassForTest (String arg0) throws Throwable {
-            // Write code here that turns the phrase above into concrete actions
-            //throw new cucumber.api.PendingException();
+        @Then("The main page should be open")
+        public void theMainPageShouldBeOpen() {
         }
-
-
-    }
+}
